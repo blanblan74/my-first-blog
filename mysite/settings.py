@@ -25,7 +25,18 @@ SECRET_KEY = '5n#5s^m)fj(f+112=7+08gt@-%sna7oo$!$l*3=e8+b_r@*t3-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'dsosflenaphippazimport os
+import sys
+
+path = '/home/<your-username>/my-first-blog'  # use your own username here
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+
+from django.core.wsgi import get_wsgi_application
+from django.contrib.staticfiles.handlers import StaticFilesHandler
+application = StaticFilesHandler(get_wsgi_application()).pythonanywhere.com']
 
 
 # Application definition
